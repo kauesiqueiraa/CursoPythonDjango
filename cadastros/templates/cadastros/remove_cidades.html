@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+    <h1>Remover Cidade:</h1>
+
+    <form method="post">
+        {% csrf_token %}
+        <p>Deseja remover a cidade "{{ cidade }}"?</p>
+        <input type="submit" value="Confirmar" class="btn btn-danger">
+        <a class="btn btn-primary" href="{% url 'cidades-list' %}">Voltar</a>
+    </form>
+
+{% endblock %}

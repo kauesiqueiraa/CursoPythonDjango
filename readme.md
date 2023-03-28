@@ -43,3 +43,28 @@ django.setup()
 - Instalar o ipython (para um console mais poderoso):
 
 `pip install ipython`
+
+### Comandos Docker:
+- Para rodar direto o docker:
+
+`docker-compose`
+
+- Caso o arquivo docker tenha outro nome:
+
+`docker-compose -f docker-compose.dev.yml(na frente do -f é o nome do arquivo)`
+
+- Para rodar
+
+`docker-compose up`
+
+- Se jogar um -d após o up, ele fica rodando em segundo plano e pode utilizar o terminal
+- Para parar é só jogar um down no final
+
+- Para baixar as imagens
+
+`docker-compose build`
+
+TO-DO
+===================
+
+- Criar o CRUD de front-end para País e Estados

@@ -1,13 +1,14 @@
 {% extends 'base.html' %}
 
 {% block conteudo %}
-    <h1>Nova Cidade:</h1>
+    <h1>Editar Cidade:</h1>
 
-    <form action="{% url 'cidades-cadastro' %}" method="POST">
+    <form method="POST">
         {% csrf_token %}
         {{ form.as_p }}
-        <input type="submit" value="Salvar" class="btn btn-primary">
+        <input type="submit" value="Atualizar" class="btn btn-primary">
         <a class="btn btn-info" href="{% url 'cidades-list' %}">Voltar</a>
+
     </form>
 
 {% endblock %}
